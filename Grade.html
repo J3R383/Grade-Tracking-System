@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Track System</title>
+    <link rel="stylesheet" href="Grade.css">
+</head>
+<body>
+    <h1>Fill Form Fields</h1>
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="student name" list="nameSuggestions" autocomplete="off" required>
+        <datalist id="nameSuggestions"></datalist>
+        <input type="text" id="regno" placeholder="reg no" list="regnoSuggestions" autocomplete="off" required>
+        <datalist id="regnoSuggestions"></datalist>
+        <input type="number" id="cat1" placeholder="CAT 1 x/30" required>
+        <input type="number" id="cat2" placeholder="CAT 2 x/30" required>
+        <input type="number" id="exam" placeholder="exam x/70" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h3>Student Records</h3>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>RegNo</th>
+                <th>CAT 1</th>
+                <th>CAT 2</th>
+                <th>Exam</th>
+                <th>Average Cat</th>
+                <th>Final Mark</th>
+                <th>Grade</th>
+                <th>Action</th>
+             </tr>
+        </thead>
+
+        <!-- where to display our data in a table -->
+         <tbody></tbody>
+    </table>
+
+    <script src="Grade.js"></script>
+</body>
+</html>
