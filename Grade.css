@@ -2,85 +2,111 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f5f7fa;
-    padding: 40px 20px;
-    h3:first-child{
-        color: #c50505;
-        margin-top: -2rem;
-    }
+    padding: 20px;
+    background-color: #f5f5f5;
+    background-image: url('ronin.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-.container {
+/* Wraps the whole page content in a styled card */
+#studentForm,
+#studentTable {
     max-width: 900px;
     margin: 0 auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-h1, h3 {
+h1 {
     text-align: center;
-    margin-bottom: 25px;
-    color: #333;
+    margin-bottom: 20px;
+    color: #253325;
+    background: linear-gradient(90deg, #ffffff, #cb4141);
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+    margin: 30px auto 15px;
+    color: #cb4141;
+    max-width: 900px;
 }
 
 form {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 10px;
+    margin-bottom: 20px;
     justify-content: space-between;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(90deg, #ffffff, #cb4141);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form input {
     flex: 1 1 30%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    transition: border-color 0.3s ease;
+    padding: 10px;
+    border: 2px solid #253325;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #b29c9c;
 }
 
 form input:focus {
     outline: none;
-    border-color: #007BFF;
-    background-color: #eef7ff;
+    border-color: #d12c2c;
+    background-color: #fff5f5;
 }
 
-form button {
+form button[type="submit"] {
     flex: 1 1 100%;
-    padding: 12px;
-    background-color: #007BFF;
+    padding: 10px 20px;
+    background: #253325;
     color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #0056b3;
+form button[type="submit"]:hover {
+    background: #db4646;
+    color: white;
 }
 
 table {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
     border-collapse: collapse;
-    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-    padding: 12px;
+    padding: 12px 15px;
     border: 1px solid #ccc;
     text-align: center;
 }
 
 thead {
-    background-color: #007BFF;
+    background-color: #253325;
     color: white;
 }
 
@@ -89,34 +115,33 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    background-color: #e0f3ff;
+    background-color: rgba(240, 151, 151, 0.4);
 }
 
 /* Edit and Delete buttons inside the table */
 td button {
-    padding: 6px 12px;
+    padding: 8px 16px;
     border: none;
-    border-radius: 6px;
-    font-size: 13px;
+    border-radius: 4px;
+    font-size: 14px;
     cursor: pointer;
+    margin-left: 5px;
+    color: white;
     transition: background-color 0.3s ease;
-    margin: 2px;
 }
 
 td button:first-child {
-    background-color: #d4ff00;
-    color: white;
+    background-color: #cf4343;
 }
 
 td button:first-child:hover {
-    background-color: #b0b300;
+    background-color: #253325;
 }
 
 td button:last-child {
-    background-color: #dc3545;
-    color: white;
+    background-color: #253325;
 }
 
 td button:last-child:hover {
-    background-color: #a71d2a;
+    background-color: #cf4343;
 }
