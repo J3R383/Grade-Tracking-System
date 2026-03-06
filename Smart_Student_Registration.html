@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Student Registration Form</title>
+        <link rel="stylesheet" href="Smart_Student_Registration.css">
+    </head>
+    <body>
+        <h1>Fill Form Fields</h1>
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Student name" list="nameSuggestions" autocomplete="off" maxlength="500" required>
+            <datalist id="nameSuggestions"></datalist>
+            <small id="nameCounter" style="flex:1 1 100%; text-align:right; color:#555;">0 / 50</small>
+            <input type="text" id="email" placeholder="example@email.com" list="emailSuggestions" autocomplete="off" required>
+            <datalist id="emailSuggestions"></datalist>
+            <input type="text" id="course" placeholder="Course" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Student Records</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <!--Where to display data in a table-->
+            <tbody></tbody>
+        </table>
+        
+        <!-- Registration Success Modal -->
+        <div id="successModal" class="modal-overlay" style="display:none;">
+            <div class="modal-box">
+                <div class="modal-icon">&#10003;</div>
+                <h2 class="modal-title">Registration Successful!</h2>
+                <p class="modal-msg">The student has been registered successfully.</p>
+                <button class="modal-close-btn" onclick="closeSuccessModal()">OK</button>
+            </div>
+        </div>
+
+        <script src="Smart_Student_Registration.js"></script>
+    </body>
+</html>
