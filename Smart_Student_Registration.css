@@ -8,10 +8,8 @@
 body {
     padding: 20px;
     background-color: #b0b0b0;
-    background-image: url('404-page_not_found.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
